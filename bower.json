@@ -16,9 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "foundation": "~5.3.3"
-  },
-  "devDependencies": {
-    "bootstrap": "~3.2.0"
+    "bootstrap-sass-official": "~3.2.0+1",
+    "openwebicons": "~1.2.2"
   }
 }
