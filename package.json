@@ -7,6 +7,10 @@
       "email": "fanzine@enlosnervios.org",
       "url": "http://enlosnervios.org"
   },
+  "repository": {
+      "type": "git",
+      "url":  "https://github.com/enlosnervios/enlosnervios-website.git"
+  },
   "homepage": "http://enlosnervios.org",
   "license": "AGPL",
   "devDependencies": {
