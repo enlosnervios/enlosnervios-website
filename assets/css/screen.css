@@ -4597,22 +4597,23 @@ html, body, .container-fluid, .row {
 
 #wrapper {
   overflow: hidden; }
-  #wrapper .sidebar {
+  #wrapper #sidebar {
     background-size: cover;
     height: 100%;
-    position: fixed; }
-    #wrapper .sidebar h1 {
+    position: fixed;
+    left: 15px; }
+    #wrapper #sidebar h1 {
       color: #fff;
       font-family: "Universalis";
-      font-size: 4em;
+      font-size: 4.5em;
       font-weight: bold;
       position: fixed;
       text-transform: uppercase;
       transform: rotate(-90deg);
-      left: -2.4em;
-      top: 220px;
+      left: -2.5em;
+      top: 240px;
       z-index: 100; }
-    #wrapper .sidebar .banner {
+    #wrapper #sidebar #banner {
       background-color: #000;
       box-shadow: 1px 1px 10px #000;
       height: 100%;
@@ -4622,10 +4623,20 @@ html, body, .container-fluid, .row {
       left: 0;
       overflow: hidden;
       white-space: nowrap; }
-    #wrapper .sidebar .logo {
+    #wrapper #sidebar #logo-banner {
       height: 50px;
       width: 50px;
       position: fixed;
       top: 20px;
       left: 1em;
       z-index: 100; }
+  #wrapper .centered-container {
+    text-align: center; }
+  #wrapper #menu {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    box-shadow: -2px 1px 10px #333;
+    height: 100%; }
+    #wrapper #menu #logo-menu {
+      height: 180px;
+      width: 180px; }

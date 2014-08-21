@@ -2,14 +2,25 @@
 
 <div id="wrapper" class="content-fluid">
     <div class="row">
-        <div class="col-xs-5 sidebar" {{#if @blog.cover}} style="background-image: url({{@blog.cover}});" {{/if}}>
+        <div id="sidebar" class="col-xs-5" {{#if @blog.cover}} style="background-image: url({{@blog.cover}});" {{/if}}>
             {{#if @blog.logo}}
-            <img class="logo" src="{{@blog.logo}}">
+            <img id="logo-banner" src="{{@blog.logo}}">
             {{/if}}
             <h1>En Los Nervios</h1>
-            <div class="banner"></div>
+            <div id="banner"></div>
         </div>
-        <div class="col-xs-8 col-xs-offset-5" style="height:9000px;">kapanga</div>
+        <div class="col-xs-8 col-xs-offset-5" style="height:9000px;">
+            <div id="menu" class="col-xs-4">
+                <div class="centered-container">
+                    <img id="logo-menu" src="assets/img/logo-editorial.png">
+                </div>
+                <ul>
+                    <li>Hola</li>
+                    <li>Hola</li>
+                    <li>Hola</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 <!--<div class="row wrapper">
