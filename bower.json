@@ -1,0 +1,24 @@
+{
+  "name": "fanzine",
+  "version": "1.0.0",
+  "authors": [
+    "libnull <astiam@riseup.net>"
+  ],
+  "description": "Theme for the blog En Los Nervios",
+  "license": "AGPL",
+  "homepage": "http://enlosnervios.org",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.3.3"
+  },
+  "devDependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}

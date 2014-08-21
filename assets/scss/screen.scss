@@ -1,0 +1,67 @@
+@import url(http://weloveiconfonts.com/api/?family=openwebicons);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+@font-face {
+    font-family: 'Universalis';
+    src: url(../fonts/UniversalisADFStd-Cond.woff);
+}
+
+/* openwebicons */
+[class*="openwebicons-"]:before {
+  font-family: 'OpenWeb Icons', sans-serif;
+  font-style: normal;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+h2, h3 {
+    font-weight: bold;
+}
+.wrapper {
+    position: relative;
+}
+.sidebar {
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
+    height: 100%;
+
+    i[class*="openwebicons-"] {
+        font-size: 1.8em;
+    }
+    i.fa {
+        font-size: 0.8em;
+    }
+}
+.logo-container {
+    text-align: center;
+}
+.logo-container h3 {
+    font-family: 'Universalis', sans-serif;
+    font-weight: bold;
+    font-size: 2.2em;
+}
+.logo {
+    height: auto;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.card {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.2em;
+    padding-left: 10px;
+}
+.license {
+    font-size: 0.8em;
+    margin-top: 30px;
+}
+.main {
+    background: #f1f1f1;
+    padding: 30px 50px 0 100px;
+}
+

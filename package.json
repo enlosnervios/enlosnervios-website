@@ -1,0 +1,19 @@
+{
+  "name": "Fanzine",
+  "version": "1.0.0",
+  "description": "Ghost theme for the En Los Nervios blog",
+  "author": {
+      "name": "Eduardo Delgaldo",
+      "email": "fanzine@enlosnervios.org",
+      "url": "http://enlosnervios.org"
+  },
+  "homepage": "http://enlosnervios.org",
+  "license": "AGPL",
+  "devDependencies": {
+      "grunt": "~0.4.5",
+      "load-grunt-tasks":     "~0.6.0",
+      "grunt-contrib-watch":  "~0.6.1",
+      "grunt-concurrent":     "~0.5.0",
+      "grunt-sass":           "~0.14.0"
+  }
+}

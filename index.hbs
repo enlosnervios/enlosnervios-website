@@ -1,0 +1,27 @@
+{{!< default}}
+
+<div class="row wrapper">
+    <div class="large-2 columns sidebar">
+        <div class="logo-container">
+            <h3>EN LOS NERVIOS</h3>
+            <img class="logo" src="{{@blog.logo}}" alt="En Los Nervios">
+        </div>
+        <ul class="card no-bullet">
+            <li><strong>Montevideo, Uruguay</strong></li>
+            <li><i class="fa fa-inbox"></i> enlosnervios@gmail.com</li>
+            <li><i class="fa fa-facebook-square"></i> facebook.com/enlosnervios.zine</li>
+            <li class="license">
+                Todos los contenidos, excepto se especifique lo contrario, son publicados bajo licencia Creative Commons CC-BY 3.0<br/>
+                <i class="openwebicons-cc"></i><i class="openwebicons-cc-by"></i></i>
+            </li>
+        </ul>
+    </div>
+    <div class="large-9 columns main">
+        <h2>Fanzines</h2>
+        <ul class="small-block-grid-3">
+            {{#foreach posts}}
+            <li><a class="th" href="#">{{content words="0"}}</a></li>
+            {{/foreach}}
+        </ul>
+    </div>
+</div>
