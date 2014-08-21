@@ -1,6 +1,18 @@
 {{!< default}}
 
-<div class="row wrapper">
+<div id="wrapper" class="content-fluid">
+    <div class="row">
+        <div class="col-xs-5 sidebar" {{#if @blog.cover}} style="background-image: url({{@blog.cover}});" {{/if}}>
+            {{#if @blog.logo}}
+            <img class="logo" src="{{@blog.logo}}">
+            {{/if}}
+            <h1>En Los Nervios</h1>
+            <div class="banner"></div>
+        </div>
+        <div class="col-xs-8 col-xs-offset-5" style="height:9000px;">kapanga</div>
+    </div>
+</div>
+<!--<div class="row wrapper">
     <div class="large-2 columns sidebar">
         <div class="logo-container">
             <h3>EN LOS NERVIOS</h3>
@@ -24,4 +36,4 @@
             {{/foreach}}
         </ul>
     </div>
-</div>
+</div>-->

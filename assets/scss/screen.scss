@@ -1,3 +1,4 @@
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
 @import url(http://weloveiconfonts.com/api/?family=openwebicons);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
@@ -13,55 +14,54 @@
   font-style: normal;
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-}
-h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans Condensed', sans-serif;
-}
-h2, h3 {
-    font-weight: bold;
-}
-.wrapper {
-    position: relative;
-}
-.sidebar {
-    padding: 30px 0;
-    position: fixed;
-    top: 0;
+html,
+body,
+.container-fluid,
+.row {
     height: 100%;
-
-    i[class*="openwebicons-"] {
-        font-size: 1.8em;
-    }
-    i.fa {
-        font-size: 0.8em;
-    }
-}
-.logo-container {
-    text-align: center;
-}
-.logo-container h3 {
-    font-family: 'Universalis', sans-serif;
-    font-weight: bold;
-    font-size: 2.2em;
-}
-.logo {
-    height: auto;
-    width: 100%;
-    margin-bottom: 100px;
-}
-.card {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 1.2em;
-    padding-left: 10px;
-}
-.license {
-    font-size: 0.8em;
-    margin-top: 30px;
-}
-.main {
-    background: #f1f1f1;
-    padding: 30px 50px 0 100px;
 }
 
+#wrapper {
+    overflow: hidden;
+
+    .sidebar {
+        background-size: cover;
+        height: 100%;
+        position: fixed;
+
+        h1 {
+            color: #fff;
+            font-family: "Universalis";
+            font-size: 4em;
+            font-weight: bold;
+            position: fixed;
+            text-transform: uppercase;
+            transform: rotate(-90deg);
+            left: -2.4em;
+            top: 220px;
+            z-index: 100;
+        }
+
+        .banner {
+            background-color: #000;
+            box-shadow: 1px 1px 10px #000;
+            height: 100%;
+            width: 6em;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .logo {
+            height: 50px;
+            width: 50px;
+            position: fixed;
+            top: 20px;
+            left: 1em;
+            z-index: 100;
+        }
+    }
+
+}
