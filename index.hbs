@@ -2,27 +2,13 @@
 
 <div id="wrapper" class="content-fluid">
     <div class="row">
-        <div id="sidebar" class="col-lg-5" {{#if @blog.cover}} style="background-image: url({{@blog.cover}});" {{/if}}>
-            {{#if @blog.logo}}
-            <img id="logo-banner" src="https://cloud.enlosnervios.org/index.php/apps/files_sharing/ajax/publicpreview.php?x=1366&a=true&file=%252Fassets%252Fimageslogo-cuadrado.jpg&t=b3bf61bb26cef377795c7d6456d2bc5c&scalingup=0">
-            {{/if}}
-            <h1>En Los Nervios</h1>
-            <div id="banner"></div>
-        </div>
+
+        {{> "sidebar"}}
+
         <div id="main" class="col-lg-8 col-lg-offset-4">
-            <div id="menu" class="col-lg-2">
-                <div class="centered-container">
-                    <img id="logo-menu" src="{{@blog.logo}}">
-                </div>
-                <ul class="list-group">
-                    <li class="list-group-item"><a href="fanzine">Fanzine</a></li>
-                    <li class="list-group-item"><a href="#">Editorial</a></li>
-                    <li class="list-group-item"><a href="#">Sello &amp; Distro</a></li>
-                    <li class="list-group-item"><a href="#">Blog</a></li>
-                    <li class="list-group-item"><a href="#">Sobre nosotrxs</a></li>
-                    <li class="list-group-item"><a href="#">Contacto</a></li>
-                </ul>
-            </div>
+
+            {{> "menu"}}
+
             <div id="content" class="col-lg-8 col-lg-offset-3">
                 <div class="row">
                     {{#foreach posts}}

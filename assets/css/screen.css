@@ -4599,6 +4599,12 @@ button.close {
 html, body, .container-fluid, .row {
   height: 100%; }
 
+h1, h2, h3, h4, h5, h6 {
+  text-align: center; }
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Open Sans", sans-serif; }
+
 #wrapper {
   overflow: hidden; }
   #wrapper #sidebar {
@@ -4655,6 +4661,8 @@ html, body, .container-fluid, .row {
       margin-bottom: 30px; }
   #wrapper #content {
     padding: 0 60px; }
+    #wrapper #content h1 {
+      font-weight: bold; }
     #wrapper #content img {
       width: 100%;
       height: 100%; }

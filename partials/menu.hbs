@@ -1,0 +1,18 @@
+<div id="menu" class="col-lg-2">
+    <div class="centered-container">
+        <a href="{{@blog.url}}" alt="Página de inicio de En Los Nervios"><img id="logo-menu" src="{{@blog.logo}}"></a>
+    </div>
+    <ul class="list-group">
+        {{#foreach posts}}
+            {{#has tag="menu"}}
+            <li class="list-group-item"><a class="js-ajax-link" href="fanzine">{{title}}</a></li>
+            {{/has}}
+        {{/foreach}}
+        <li class="list-group-item"><a class="js-ajax-link" href="fanzine">Fanzine</a></li>
+        <li class="list-group-item"><a href="editorial">Editorial</a></li>
+        <li class="list-group-item"><a href="sello">Sello &amp; Distro</a></li>
+        <li class="list-group-item"><a href="blog">Blog</a></li>
+        <li class="list-group-item"><a href="sobre">Sobre nosotrxs</a></li>
+        <li class="list-group-item"><a href="contacto">Contacto</a></li>
+    </ul>
+</div>
