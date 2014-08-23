@@ -3,16 +3,11 @@
         <a href="{{@blog.url}}" alt="Página de inicio de En Los Nervios"><img id="logo-menu" src="{{@blog.logo}}"></a>
     </div>
     <ul class="list-group">
-        {{#foreach posts}}
-            {{#has tag="menu"}}
-            <li class="list-group-item"><a class="js-ajax-link" href="fanzine">{{title}}</a></li>
-            {{/has}}
-        {{/foreach}}
-        <li class="list-group-item"><a class="js-ajax-link" href="fanzine">Fanzine</a></li>
-        <li class="list-group-item"><a href="editorial">Editorial</a></li>
-        <li class="list-group-item"><a href="sello">Sello &amp; Distro</a></li>
-        <li class="list-group-item"><a href="blog">Blog</a></li>
-        <li class="list-group-item"><a href="sobre">Sobre nosotrxs</a></li>
-        <li class="list-group-item"><a href="contacto">Contacto</a></li>
+        <li class="list-group-item"><a class="js-ajax-link" href="{{@blog.url}}/fanzine">Fanzine</a></li>
+        <li class="list-group-item"><a class="js-ajax-link" href="editorial" href="{{@blog.url}}/editorial">Editorial</a></li>
+        <li class="list-group-item"><a class="js-ajax-link" href="sello" href="{{@blog.url}}/sello">Sello &amp; Distro</a></li>
+        <li class="list-group-item"><a class="js-ajax-link" href="blog" href="{{@blog.url}}/blog">Blog</a></li>
+        <li class="list-group-item"><a class="js-ajax-link" href="sobre" href="{{@blog.url}}/sobre">Sobre nosotrxs</a></li>
+        <li class="list-group-item"><a class="js-ajax-link" href="contacto" href="{{@blog.url}}/contacto">Contacto</a></li>
     </ul>
 </div>

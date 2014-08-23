@@ -1,8 +1,4 @@
 jQuery(function($) {
-    /* ============================================================ */
-    /* Ajax Loading */
-    /* ============================================================ */
-
     var History = window.History;
     var loading = false;
     var $ajaxContainer = $('#content');
@@ -24,9 +20,18 @@ jQuery(function($) {
             // Set the title to the requested urls document title
             document.title = $html.filter('title').text();
 
-            $('html, body').animate({'scrollTop': 0});
-
             $ajaxContainer.fadeOut(100, function() {
+
+                if (!$('#main').hasClass('shrinked')) {
+                    $('#content').addClass('col-lg-12');
+                    $('#content').removeClass('col-lg-8');
+                    $('#main').addClass('col-lg-offset-1');
+                    $('#main').addClass('shrinked');
+                    $('#main').removeClass('col-lg-offset-4', 100, "easeOutSine");
+                    $('#sidebar').addClass('col-lg-2');
+                    $('#sidebar').removeClass('col-lg-4', 100, "easeOutSine");
+                }
+
                 $ajaxContainer.html($newContent);
                 $ajaxContainer.fadeIn(100);
 
@@ -45,10 +50,6 @@ jQuery(function($) {
 
             if (url !== currentState.url.replace(/\/$/, "")) {
                 loading = true;
-
-                if ($(this).hasClass('js-show-index') || $(this).parent('.pagination').length > 0) {
-                    showIndex = true;
-                }
 
                 History.pushState({}, title, url);
             }
