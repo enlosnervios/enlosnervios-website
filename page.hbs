@@ -3,7 +3,13 @@
 <div id="wrapper" class="content-fluid">
     <div class="row">
 
-        {{> "sidebar"}}
+        <div id="sidebar" class="col-lg-2" {{#if @blog.cover}} style="background-image: url({{@blog.cover}});" {{/if}}>
+            {{#if @blog.logo}}
+            <img id="logo-banner" src="https://cloud.enlosnervios.org/index.php/apps/files_sharing/ajax/publicpreview.php?x=1366&a=true&file=%252Fassets%252Fimageslogo-cuadrado.jpg&t=b3bf61bb26cef377795c7d6456d2bc5c&scalingup=0">
+            {{/if}}
+            <h1>En Los Nervios</h1>
+            <div id="banner"></div>
+        </div>
 
         <div id="main" class="col-lg-8 col-lg-offset-1">
 

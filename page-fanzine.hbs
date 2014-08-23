@@ -1,0 +1,52 @@
+{{!< default}}
+
+<div id="wrapper" class="content-fluid">
+    <div class="row">
+
+        <div id="sidebar" class="col-lg-2" {{#if @blog.cover}} style="background-image: url({{@blog.cover}});" {{/if}}>
+            {{#if @blog.logo}}
+            <img id="logo-banner" src="https://cloud.enlosnervios.org/index.php/apps/files_sharing/ajax/publicpreview.php?x=1366&a=true&file=%252Fassets%252Fimageslogo-cuadrado.jpg&t=b3bf61bb26cef377795c7d6456d2bc5c&scalingup=0">
+            {{/if}}
+            <h1>En Los Nervios</h1>
+            <div id="banner"></div>
+        </div>
+
+        <div id="main" class="col-lg-8 col-lg-offset-1">
+
+            {{> "menu"}}
+
+            <div id="content" class="col-lg-12 col-lg-offset-3">
+                <article class="{{post_class}}">
+                    {{#post}}
+                        <div class="page-header">
+                            <h1>{{title}}</h1>
+                        </div>
+                        <section class="post">
+                            {{content}}
+                        </section>
+                    {{/post}}
+                    <div class="row thumbnail-list">
+                        <div class="col-lg-4">
+                            <div class="thumbnail"><img src="https://cloud.enlosnervios.org/index.php/core/preview.png?file=%2Fassets%2Fimages%2Ftapa-e5.jpg&x=1366&a=true&scalingup=0"></div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="thumbnail"><img src="https://cloud.enlosnervios.org/index.php/core/preview.png?file=%2Fassets%2Fimages%2Ftapa-e4.jpg&x=1366&a=true&scalingup=0"></div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="thumbnail"><img src="https://cloud.enlosnervios.org/index.php/core/preview.png?file=%2Fassets%2Fimages%2Ftapa-e3.jpg&x=1366&a=true&scalingup=0"></div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="thumbnail"><img src="https://cloud.enlosnervios.org/index.php/core/preview.png?file=%2Fassets%2Fimages%2Ftapa-e2.jpg&x=1366&a=true&scalingup=0"></div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="thumbnail"><img src="https://cloud.enlosnervios.org/index.php/core/preview.png?file=%2Fassets%2Fimages%2Ftapa-e1.jpg&x=1366&a=true&scalingup=0"></div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
