@@ -4584,7 +4584,11 @@ button.close {
     display: none !important; } }
 
 @font-face {
-  font-family: 'Universalis';
+  font-family: "Universalis";
+  src: url(../fonts/UniversalisADFStd-Regular.woff); }
+
+@font-face {
+  font-family: "Universalis Cond";
   src: url(../fonts/UniversalisADFStd-Cond.woff); }
 
 /* openwebicons */
@@ -4604,7 +4608,7 @@ html, body, .container-fluid, .row {
     left: 15px; }
     #wrapper #sidebar h1 {
       color: #fff;
-      font-family: "Universalis";
+      font-family: "Universalis Cond";
       font-size: 4.5em;
       font-weight: bold;
       position: fixed;
@@ -4633,10 +4637,24 @@ html, body, .container-fluid, .row {
   #wrapper .centered-container {
     text-align: center; }
   #wrapper #menu {
+    background-color: #fff;
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
     box-shadow: -2px 1px 10px #333;
-    height: 100%; }
+    height: 100%;
+    padding: 30px 15px;
+    position: fixed; }
+    #wrapper #menu a {
+      color: #333;
+      font-family: "Universalis";
+      font-size: 1.4em;
+      text-transform: uppercase; }
     #wrapper #menu #logo-menu {
       height: 180px;
-      width: 180px; }
+      width: 180px;
+      margin-bottom: 30px; }
+  #wrapper #content {
+    padding: 0 60px; }
+    #wrapper #content img {
+      width: 100%;
+      height: 100%; }
